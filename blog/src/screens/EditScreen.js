@@ -9,7 +9,7 @@ const EditScreen = ({ navigation }) => {
 
     return (
         <View>
-            <Text style={styles.label}>Enter Title:</Text>
+            <Text style={styles.label}>Enter Title: {navigation.getParam('id')}</Text>
             <TextInput style={styles.input} value={title} onChangeText={(text) => setTitle(text)}/>
             <Text style={styles.label}>Enter Content:</Text>
             <TextInput style={styles.input} value={content} onChangeText={(text) => setContent(text)}/>
